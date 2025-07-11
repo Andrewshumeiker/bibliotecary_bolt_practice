@@ -1,0 +1,30 @@
+{
+  "name": "admin-panel-spa",
+  "version": "1.0.0",
+  "description": "Administration Panel with Authentication and Course Management",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "concurrently \"json-server --watch db.json --port 3000\" \"vite\"",
+    "dev": "concurrently \"json-server --watch db.json --port 3000\" \"vite\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "json-server --watch db.json --port 3000"
+  },
+  "keywords": [
+    "admin",
+    "spa",
+    "javascript",
+    "authentication",
+    "course-management"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "vite": "^5.0.0"
+  }
+}

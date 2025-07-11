@@ -1,0 +1,47 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "admin@admin.com",
+      "password": "admin123",
+      "role": "admin",
+      "phone": "1234567890",
+      "enrollNumber": "98765432100000",
+      "dateOfAdmission": "01-Jan-2020"
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "email": "john@example.com",
+      "password": "visitor123",
+      "role": "visitor",
+      "phone": "0987654321",
+      "enrollNumber": "12345678900001",
+      "dateOfAdmission": "15-Mar-2023"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "title": "Introduction to JavaScript",
+      "description": "Basic JavaScript Course covering fundamentals, DOM manipulation, and modern ES6+ features",
+      "startDate": "10-Jul-2025",
+      "duration": "4 weeks"
+    },
+    {
+      "id": 2,
+      "title": "Advanced React Development",
+      "description": "Comprehensive React course covering hooks, state management, and advanced patterns",
+      "startDate": "15-Aug-2025",
+      "duration": "6 weeks"
+    }
+  ],
+  "enrollments": [
+    {
+      "id": 1,
+      "userId": 2,
+      "courseId": 1
+    }
+  ]
+}
