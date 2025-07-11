@@ -7,6 +7,8 @@ class App {
     constructor() {
         this.authService = new AuthService();
         this.router = new Router();
+        // Make router globally accessible
+        window.app = this;
         this.init();
     }
 

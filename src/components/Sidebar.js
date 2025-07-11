@@ -69,7 +69,9 @@ export class Sidebar {
                 link.classList.add('active');
                 
                 // Navigate to route
-                window.app.router.navigate(route);
+                if (window.app && window.app.router) {
+                    window.app.router.navigate(route);
+                }
             }
         });
     }

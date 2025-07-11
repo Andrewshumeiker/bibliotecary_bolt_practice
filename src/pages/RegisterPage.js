@@ -87,7 +87,9 @@ export class RegisterPage {
         document.addEventListener('click', (e) => {
             if (e.target.getAttribute('href') === '/login') {
                 e.preventDefault();
-                window.app.router.navigate('/login');
+                if (window.app && window.app.router) {
+                    window.app.router.navigate('/login');
+                }
             }
         });
     }
